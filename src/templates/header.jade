@@ -1,0 +1,13 @@
+section#header
+  #logo AER
+  
+  mixin navbar(links)
+    nav
+      ul 
+        each value, key in links
+          li
+            a(href=value)= key
+  
+  +navbar({'Home':'home.html', 'About':'about.html','Contact':'contact.html'})
+  
+  #name Adam Recvlohe
